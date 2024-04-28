@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+h2{
+  color: white;
+  background-color: blueviolet;
+  text-align: center;
+}
+.search-container {
+  text-align:justify;
+  margin-bottom: 20px;
+  
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-color: black;
+  border-radius:4px;
+  width: 70%;
+}
+
+button {
+  padding: 10px; 
+  background-color: blueviolet;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
