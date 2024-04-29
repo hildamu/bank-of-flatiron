@@ -61,3 +61,64 @@ button {
   border-radius: 6px;
   cursor: pointer;
 }
+
+
+.Transaction {
+  margin-top: 20px;
+}
+
+.Transaction form {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.Transaction form .input-group {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px; 
+}
+
+.Transaction form .input-group label {
+  margin-bottom: 5px; 
+}
+
+.Transaction form .input-group input[type="date"],
+.Transaction form .input-group input[type="text"],
+.Transaction form .input-group input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  margin: bottom 5px; 
+}
+
+.Transaction form .input-group input[type="date"] {
+  width: 100px; 
+}
+
+.Transaction form .input-group button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.Transaction form .input-group button:hover {
+  background-color: #0056b3; 
+}
+
+.Transaction {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+
+
+
+
