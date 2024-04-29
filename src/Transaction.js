@@ -1,14 +1,14 @@
 import React from 'react';
 import { useState } from 'react';
-import Row from './row';
-import NewTransaction from './NewTransaction';
-import Search from "./Search"
+import Structure from './Structure';
+import AddedTransaction from './AddedTransaction';
+import Search from './Search'
 
 
 function Transaction({records}) {
   const [stateRecord, setStateRecords] = useState(records);
     const rows = stateRecord.map(data => (
-       < Row
+       < Structure
           key={data.id}
             date={data.date} 
             description={data.description}
@@ -19,7 +19,7 @@ function Transaction({records}) {
     return (
     <div>
       <Search stateRecords={stateRecord} SetData={setStateRecords} />
-      <NewTransaction SetData={setStateRecords} />
+      <AddedTransaction SetData={setStateRecords} />
         <table>
           <thead>
             <tr>
@@ -36,3 +36,4 @@ function Transaction({records}) {
 }
 
 export default Transaction;
+//indata.description.toLowerCase().includes(searchValue.toLowerCase())

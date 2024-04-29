@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Row(props) {
+function Structure(props) {
     return (
         <tr>
             <td>{props.date}</td>
@@ -11,4 +11,4 @@ function Row(props) {
     )
 }
 
-export default  Row;
+export default  Structure;

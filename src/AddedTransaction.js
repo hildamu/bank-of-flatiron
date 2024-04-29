@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-function NewTransaction({SetData }) {
+function AddedTransaction({SetData }) {
 
     const [date, setDate] = useState("")
     const [description, setDescription] = useState("")
@@ -10,14 +10,14 @@ function NewTransaction({SetData }) {
 
   function handleSubmit(e){
     e.preventDefault();
-    let newTransaction = {
+    let addedTransaction = {
       id: Math.floor(Math.random() * 200),
       date: date,
       description: description,
       category: category,
       amount: parseFloat(amount),
     }
-    SetData(stateRecords => [...stateRecords, newTransaction])
+    SetData(stateRecords => [...stateRecords, addedTransaction])
     setDate("");
     setDescription("");
     setCategory("");
@@ -36,4 +36,5 @@ function NewTransaction({SetData }) {
     </div>
   );
 }
-export default NewTransaction
+
+export default AddedTransaction;
