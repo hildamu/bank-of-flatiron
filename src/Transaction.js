@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import Structure from './Structure';
-import AddedTransaction from './AddedTransaction';
+import AddedTransactions from './AddedTransactions';
 import Search from './Search'
 
 
@@ -19,7 +19,7 @@ function Transaction({records}) {
     return (
     <div>
       <Search stateRecords={stateRecord} SetData={setStateRecords} />
-      <AddedTransaction SetData={setStateRecords} />
+      <AddedTransactions SetData={setStateRecords} />
         <table>
           <thead>
             <tr>
