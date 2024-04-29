@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-function AddedTransactions({SetData }) {
+function AddedTransaction({SetData }) {
 
     const [date, setDate] = useState("")
     const [description, setDescription] = useState("")
@@ -37,4 +37,4 @@ function AddedTransactions({SetData }) {
   );
 }
 
-export default AddedTransactions;
+export default AddedTransaction;
